@@ -7,13 +7,12 @@ body {
 	overflow: hidden;
 }
 
-
-
 label {
 	background: #444;
 	color: #fff;
 	transition: transform 400ms ease-out;
 	display: inline-block;
+  margin: auto;
   min-height: 100%;
 	width: 98vw;
 	height: 100vh;
@@ -61,7 +60,13 @@ input:nth-of-type(6):checked ~ label:nth-of-type(6)
 input:nth-of-type(7):checked ~ label:nth-of-type(7)
 input:nth-of-type(8):checked ~ label:nth-of-type(8)
 input:nth-of-type(9):checked ~ label:nth-of-type(9)
-input:nth-of-type(10):checked ~ label:nth-of-type(10){
+input:nth-of-type(10):checked ~ label:nth-of-type(10)
+input:nth-of-type(11):checked ~ label:nth-of-type(11)
+input:nth-of-type(12):checked ~ label:nth-of-type(12)
+input:nth-of-type(13):checked ~ label:nth-of-type(13)
+input:nth-of-type(14):checked ~ label:nth-of-type(14)
+input:nth-of-type(15):checked ~ label:nth-of-type(15)
+input:nth-of-type(16):checked ~ label:nth-of-type(16){
    z-index: 0;
 }
 
@@ -103,6 +108,35 @@ input:nth-of-type(9):checked ~ label {
 
 input:nth-of-type(10):checked ~ label {
 	transform: translate3d(-900%, 0, 0);
+}
+
+input:nth-of-type(11):checked ~ label {
+	transform: translate3d(-1000%, 0, 0);
+}
+
+input:nth-of-type(12):checked ~ label {
+	transform: translate3d(-1100%, 0, 0);
+}
+
+input:nth-of-type(13):checked ~ label {
+	transform: translate3d(-1200%, 0, 0);
+}
+
+input:nth-of-type(14):checked ~ label {
+	transform: translate3d(-1300%, 0, 0);
+}
+
+input:nth-of-type(15):checked ~ label {
+	transform: translate3d(-1400%, 0, 0);
+}
+
+input:nth-of-type(16):checked ~ label {
+	transform: translate3d(-1500%, 0, 0);
+}
+
+
+.title {
+  color: black;
 }
 
 label {
