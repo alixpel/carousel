@@ -1,10 +1,50 @@
-* {
+/* * {
 	box-sizing: border-box;
-}
+} */
 
 body {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	overflow: hidden;
+}
+
+.accueil {
+  background-color: #444;
+  height: 100vh;
+  padding-top: 2rem;
+  width: 100vw;
+}
+
+.photos-link {
+  margin: auto;
+  width: max-content;
+}
+
+
+.title {
+  color: black;
+}
+
+.keys {
+
+	bottom: 0;
+  color: #fff;
+	left: 0;
+	opacity: 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  text-align: left;
+	transition: all 400ms linear;
+	z-index: 10;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
 }
 
 label {
@@ -32,19 +72,6 @@ form {
 }
 input {
 	position: absolute;
-}
-
-.keys {
-	position: fixed;
-	z-index: 10;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 1rem;
-	color: #fff;
-	text-align: center;
-	transition: all 300ms linear;
-	opacity: 0;
 }
 
 input:focus ~ .keys {
@@ -128,15 +155,6 @@ input:nth-of-type(14):checked ~ label {
 
 input:nth-of-type(15):checked ~ label {
 	transform: translate3d(-1400%, 0, 0);
-}
-
-input:nth-of-type(16):checked ~ label {
-	transform: translate3d(-1500%, 0, 0);
-}
-
-
-.title {
-  color: black;
 }
 
 label {
