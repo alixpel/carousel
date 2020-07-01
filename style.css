@@ -17,6 +17,10 @@ body {
   width: max-content;
 }
 
+.smartphone {
+  display: none;
+}
+
 .title {
   color: black;
 }
@@ -206,4 +210,25 @@ img {
   margin: 0.1rem;
   max-height: 96vh;
   max-width: 100vw;
+}
+
+@media all and (max-device-width: 480px)
+{
+  .smartphone {
+    display: block;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    max-width: 80vw;
+  }
+
+  .photos-link a {
+    font-size: 4rem;
+  }
+
 }
