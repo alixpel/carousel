@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 35vh;
   justify-content: center;
   opacity: 1;
   padding: 1rem;
@@ -149,7 +149,29 @@ img {
 
 /* Don't need button navigation */
 @supports (scroll-snap-type) {
+
   .slider > a {
     display: none;
   }
+
+}
+
+@media all and (max-device-width: 480px) {
+
+    .coucou {
+      height: 27vh;
+      width: 62vw;
+    }
+
+    .slider > a {
+      font-size: 2rem;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    #acceptbutton {
+      font-size: 1.8rem;
+      padding: 0.7rem 0.5rem;
+    }
+
 }
