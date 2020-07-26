@@ -24,7 +24,7 @@ body {
   height: 35vh;
   justify-content: center;
   opacity: 1;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   position: absolute;
   text-align: center;
   transition: opacity 1.5s;
@@ -137,7 +137,12 @@ body {
   color: white;
 }
 
+p {
+  font-size: 2rem;
+}
+
 img {
+  border-radius: 10px;
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -180,6 +185,10 @@ img {
 
     .instruction-for-scroll-snap-type-device {
       display: block;
+    }
+
+    p {
+      font-size: 1rem;
     }
 
     #acceptbutton {
