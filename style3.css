@@ -69,25 +69,26 @@ body {
   display: flex;
 
   overflow-x: auto;
+  scrollbar-color: red blue;
   scroll-snap-type: x mandatory;
 
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 
-  /*
+
   scroll-snap-points-x: repeat(300px);
   scroll-snap-type: mandatory;
-  */
+
   z-index: 1;
 }
 
 .slides::-webkit-scrollbar {
-  height: 10px;
+  height: 50px;
   width: 10px;
 }
 
 .slides::-webkit-scrollbar-thumb {
-  background: black;
+  background: #b3b3b3;
   border-radius: 10px;
 }
 
