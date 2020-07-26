@@ -80,6 +80,7 @@ body {
   */
   z-index: 1;
 }
+
 .slides::-webkit-scrollbar {
   height: 10px;
   width: 10px;
@@ -114,6 +115,10 @@ body {
 
 .slides > div:target {
   /* transform: scale(0.8); */
+}
+
+.instruction-for-scroll-snap-type-device {
+  display: none;
 }
 
 .author-info {
@@ -154,6 +159,10 @@ img {
     display: none;
   }
 
+  .instruction-for-scroll-snap-type-device {
+    display: block;
+  }
+
 }
 
 @media all and (max-device-width: 480px) {
@@ -167,6 +176,10 @@ img {
       font-size: 2rem;
       height: 2.5rem;
       width: 2.5rem;
+    }
+
+    .instruction-for-scroll-snap-type-device {
+      display: block;
     }
 
     #acceptbutton {
